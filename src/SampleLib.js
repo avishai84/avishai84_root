@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './SampleLib.scss';
-const stylesIframe = {'width':'100%','height':'auto','min-height':'500px'}
+import SVGinDepth from './SVGinDepth';
 
 class SampleLib extends Component {
 
@@ -8,10 +8,8 @@ class SampleLib extends Component {
     return (
       <div className="library">
         
-
-        {/* <iframe style={stylesIframe} src="http://www.avishai84.com/librarySampleReact.php"></iframe> */}
-
-
+        <SVGinDepth/>
+       
 
 
       </div>

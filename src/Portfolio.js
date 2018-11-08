@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import './Portfolio.scss';
 import Sticker from './Sticker';
 import GapImg from './images/gap/HpGfol.png';
-import WineCom1 from './images/wine.com/wine-com-email.png';
-import WineCom2 from './images/wine.com/mobile-email2.png';
+import WineCom1 from './images/wine/wine-com-email.png';
+import WineCom2 from './images/wine/mobile-email2.png';
+import gsl from './images/gsl/gsl.png';
 
 const vimeoIframe = '<iframe src="//player.vimeo.com/video/61961717?title=0&amp;byline=0&amp;portrait=0" width="100%" height="223" kwframeid="1" frameborder="0"  webkitallowfullscreen=true  mozallowfullscreen=true  allowfullscreen=true ></iframe>';
 
@@ -54,9 +55,9 @@ class Portfolio extends Component {
     return (
       <div className="portfolio">
         <section>
-           <h2>portfolio</h2>
+           {/* <h2>portfolio</h2> */}
             <div className="well">
-              <p className="lead">.....</p> 
+              {/* <p className="lead">.....</p>  */}
             </div>
             {/* Gap */}
             <div className="row featurette">
@@ -65,7 +66,7 @@ class Portfolio extends Component {
                 <img src={GapImg} alt="Landing Gap inc."/>
               </div>
               <div className="col-md-7">
-              <h2 className="featurette-heading">Gap Inc. <span className="text-muted">Web Developer</span></h2>
+              <h2 className="featurette-heading">Gap Inc. <span className="text-muted">Sr. Web Developer</span></h2>
                 <p className="lead">At Gap, my team collaborates with brand production, brand web design and marketing teams to create and maintain visual design into functional web pages.</p>
                 <p className="lead">My focus is coding responsive React UI content optimized for speed.</p>
               </div>
@@ -93,22 +94,25 @@ class Portfolio extends Component {
             <hr className="featurette-divider" />
             <div className="row featurette">
             
-              <div className="col-md-5">more to come....</div>
-              <div className="col-md-7">example</div>
+              <div className="col-md-5"><h2 className="featurette-heading">German Shepherd breed. <span className="text-muted">Basic knowledge.</span></h2><p className="lead">I share my experience as a German Shepherd owner to educate people about the breed. Owning a dog requires a lot of work, like a website you must keep maintaining.</p></div>
+              <div className="col-md-7"><a href="http://www.germanshepherdlover.net/home.html" target="_blank" >
+                  <img style={{"max-width":"420px","float":"right"}} src={gsl} alt="German Shepherd Lover" />
+                </a>
+              </div>
             </div>
 
 
             <hr className="featurette-divider" />
             <div className="row featurette">
-              <div className="col-md-7">
+              <div className="col-md-7 vimeoPlacement">
+              {/* video will be append in here */}
+              </div>  
+              <div className="col-md-5">
                 <h2 className="featurette-heading">And lastly, this one. <span className="text-muted">Hobby.</span></h2>
                 <p className="lead">Playing music. I've been fortunate to take music lessons as a teenager. Drums are my main instrument. As a self starter, I taught myself to play the piano, bass guitar, accoustic guitar and accordion. I play and record music at my home studio.&nbsp;
                 <a href="http://www.youtube.com/channel/UCaeHQSEl1OkzWh37mBNhwFQ" className="btn btn-danger btn-sm" target="_blank" role="button">YouTube</a>
                 </p>
               </div>
-              <div className="col-md-5 vimeoPlacement">
-              {/* video will be append in here */}
-              </div>  
             </div>
         </section>
         <Sticker/>
