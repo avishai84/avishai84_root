@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Home from './Home';
 import Contacts from './Contacts';
 import Portfolio from './Portfolio';
-import SampleLib from './SampleLib';
+import Library from './Library';
 import {BrowserRouter as Router, Route, Switch, NavLink} from 'react-router-dom';
 
 
@@ -17,7 +17,7 @@ class Navigation_components extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/contacts" component={Contacts} />
             <Route path="/portfolio" component={Portfolio} />
-            <Route path="/library" component={SampleLib} />
+            <Route path="/library" component={Library} />
           </Switch>
         </main>
     

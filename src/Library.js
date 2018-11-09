@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './SampleLib.scss';
+import './Library.scss';
 import SVGinDepth from './SVGinDepth';
 
-class SampleLib extends Component {
+class Library extends Component {
 
   render() {
     return (
@@ -17,4 +17,4 @@ class SampleLib extends Component {
   }
 }
 
-export default SampleLib;
+export default Library;
