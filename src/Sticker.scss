@@ -35,7 +35,9 @@
     outline:none;
     font-size: 0.70em;
     padding: 0.45em;
-
+    @media(max-width: 579px){
+      top: -0.15vh;
+    }
     &:hover {
       cursor: pointer;
     }
@@ -50,8 +52,15 @@
     background: -webkit-linear-gradient(top, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);
     background: linear-gradient(to bottom, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 );
+    @media(max-width: 579px){
+      width: 125px;
+      padding: 0.25em 0.15em;
+      line-height: 0.80;
+    }
+
     a {
       color:#333;
+    
       &:hover {
         text-decoration: none;
       }

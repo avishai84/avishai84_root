@@ -71,7 +71,7 @@ class Sticker extends React.Component {
             <button
             onClick={this.close}
             >✕</button>
-            <span className="icon"></span>
+          
             <a href={data_options.link} target="_blank"><span className="icon"></span><small>Check out my github</small></a>
         </div>
     </div>
