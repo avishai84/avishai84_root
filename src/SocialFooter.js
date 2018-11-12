@@ -36,11 +36,10 @@ class SocialFooter extends Component {
         
           </div>
         </small>
-        <p className="small">© All rights reserved 1999-
-          <span data-year="">{year} </span>
+        <p className="small">
           Avishai84.com, created by Avishai with
           &nbsp;<i className="fa fa-heart-o"></i>
-          , a front end developer.
+          , a front end developer, {year}.
         </p>
           <div className="small">
           
