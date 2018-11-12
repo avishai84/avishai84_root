@@ -66,7 +66,7 @@ class Portfolio extends Component {
                 <img src={GapImg} alt="Landing Gap inc."/>
               </div>
               <div className="col-md-7">
-              <h2 className="featurette-heading">Gap Inc. <span className="text-muted">Sr. Web Developer</span></h2>
+              <h2 className="featurette-heading">Gap Inc. <span className="text-muted">Web Developer</span></h2>
                 <p className="lead">At Gap, my team collaborates with brand production, brand web design and marketing teams to create and maintain visual design into functional web pages.</p>
                 <p className="lead">My focus is coding responsive React UI content optimized for speed.</p>
               </div>
