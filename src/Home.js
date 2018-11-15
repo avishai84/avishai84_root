@@ -9,9 +9,9 @@ class Home extends Component {
     return (
       <div className="home"> 
         <div className="jumbotron">
-          <div>
+          <div className="relative">
             <span className="fadeThis" data-tooltip>
-            <img src={HeadShot} alt="headShot" data-title="head shot" className="img-circle pull-left headShot"/>
+              <img src={HeadShot} alt="headShot" data-title="head shot" className="img-circle pull-left headShot"/>
             </span>
           </div>
           <div className="frontEnd">a front-end<div className="dot">web<div className="bracket"></div><div className="blue">developer</div></div><div className="bracket"></div></div> 
