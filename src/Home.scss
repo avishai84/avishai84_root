@@ -1,4 +1,5 @@
 .home{
+  .relative{position: relative;}
   .jumbotron {
     box-shadow: 2px 4px 16px;
     margin-top: 10%;
@@ -75,12 +76,7 @@
       
     }
       /* -- Tool tip -- */
-      span[data-toolTip],
-      span[data-toolTip-email-1],
-      span[data-toolTip-email-2],
-      span[data-toolTip-email-3],
-      span[data-toolTip-email-4] {
-        position: relative;
+      span[data-toolTip] {
         text-decoration: none;
         color: inherit;
         cursor: help;
@@ -89,8 +85,8 @@
     span[data-toolTip]:hover::after {
       content: attr(data-toolTip);
       position: absolute;
-      left: -10px;
-      top: 50px;
+      left: 10%;
+      top:1em;
       width: 238px;
       height: 215px;
       border: 1px #808080 solid;
@@ -101,64 +97,7 @@
       color: #FFFFFF;
       font-size: 24px;
       z-index: 1;
-      font-family: 'Londrina Solid', cursive;
       background: url(images/author-img-tooltip.jpg) rgba(74, 74, 74, 0.7) no-repeat 0 0;
-    }
-    span[data-toolTip-email-1]:hover::after {
-      content: attr(data-toolTip-email-1);
-      position: absolute;
-      left: 224px;
-      top: -30px;
-      width: 120px;
-      height: 77px;
-      border: 1px #808080 solid;
-      border-radius: 4px;
-      padding: 3px 0 0 0;
-      box-shadow: 2px 3px 10px 3px #000000;
-      z-index: 1;
-      //background: url(../images/email-thumbnail/email-1.jpg) rgba(74, 74, 74, 0.7) no-repeat 0 0;
-    }
-    span[data-toolTip-email-2]:hover::after {
-      content: attr(data-toolTip-email-2);
-      position: absolute;
-      left: 240px;
-      top: -35px;
-      width: 121px;
-      height: 124px;
-      border: 1px #808080 solid;
-      border-radius: 4px;
-      padding: 3px 0 0 0;
-      box-shadow: 2px 3px 10px 3px #000000;
-      z-index: 1;
-      //background: url(../images/email-thumbnail/email-2.jpg) rgba(74, 74, 74, 0.7) no-repeat 0 0;
-    }
-    span[data-toolTip-email-3]:hover::after {
-      content: attr(data-toolTip-email-3);
-      position: absolute;
-      left: 240px;
-      top: -35px;
-      width: 121px;
-      height: 97px;
-      border: 1px #808080 solid;
-      border-radius: 4px;
-      padding: 3px 0 0 0;
-      box-shadow: 2px 3px 10px 3px #000000;
-      z-index: 1;
-      //background: url(../images/email-thumbnail/email-3.jpg) rgba(74, 74, 74, 0.7) no-repeat 0 0;
-    }
-    span[data-toolTip-email-4]:hover::after {
-      content: attr(data-toolTip-email-4);
-      position: absolute;
-      left: 200px;
-      top: -35px;
-      width: 140px;
-      height: 230px;
-      border: 1px #808080 solid;
-      border-radius: 4px;
-      padding: 3px 0 0 0;
-      box-shadow: 2px 3px 10px 3px #000000;
-      z-index: 1;
-      //background: url(../images/email-thumbnail/email-4.jpg) rgba(74, 74, 74, 0.7) no-repeat 0 0;
     }
 
     .fadeThis {
@@ -184,59 +123,7 @@
       1000% {
         opacity: 1;
       }
-    }
-
-      /* color class colorThis */
-      .colorThis {
-        -webkit-animation: colorCng 3s infinite alternate;
-        -moz-animation: colorCng 3s infinite alternate;
-        -o-animation: colorCng 3s infinite alternate;
-        animation: colorCng 3s infinite alternate;
-      }
-      @-webkit-keyframes colorCng {
-        0% {
-          color: #16B4ED;
-        }
-        20% {
-          color: #14A8DC;
-        }
-        100% {
-          color: #333;
-        }
-      }
-      @-moz-keyframes colorCng {
-        0% {
-          color: #16B4ED;
-        }
-        20% {
-          color: #14A8DC;
-        }
-        100% {
-          color: #333;
-        }
-      }
-      @-o-keyframes colorCng {
-        0% {
-          color: #16B4ED;
-        }
-        20% {
-          color: #14A8DC;
-        }
-        100% {
-          color: #333;
-        }
-      }
-      @keyframes colorCng {
-        0% {
-          color: #16B4ED;
-        }
-        20% {
-          color: #14A8DC;
-        }
-        100% {
-          color: #333;
-        }
-      }
+     } 
     }
 
   
