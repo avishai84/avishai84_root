@@ -3,3 +3,15 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+@import url('Header.scss');
+@import url('ColorPicker.scss');
+@import url('Contants.scss');
+@import url('ContentWrapper.scss');
+@import url('Home.scss');
+@import url('Library.scss');
+@import url('Navigation.scss');
+@import url('Portfolio.scss');
+@import url('SocialFooter.scss');
+@import url('SVGinDepth.scss');
+@import url('Sticker.scss');
+@import url('Footer.scss');
