@@ -6,6 +6,8 @@ import Navigation_components from './Navigation_components';
 
 const nav = navigation.nav;
 
+let findCollapse = '';
+
 const navMatchActive = (match, location) => {
   if (!match) {
     return false
@@ -17,17 +19,20 @@ class Navigation extends Component {
   constructor(props){
     super(props);
     this.state = {
-      toggle : 'block'
+      height : '0',
+      changeKlass: findCollapse
     };
     this.toggleNav = this.toggleNav.bind(this);
   }
 
-toggleNav(){
-  const isHide = this.state.toggle == 'none' ?  'block' : 'none' ; 
-  this.setState({
-    toggle : isHide
-  });
-}
+toggleNav(e){
+const collaped = e.target.parentNode.nextSibling.classList.contains('collapse') ? e.target.parentNode.nextSibling.classList.remove('collapse') : e.target.parentNode.nextSibling.classList.add('collapse');
+
+    this.setState({
+      height : 'auto',
+      changeKlass : collaped,
+    });
+  }
 
   render() {
     return (
@@ -37,7 +42,7 @@ toggleNav(){
             <header>
             <nav className="navbar navbar-expand-lg navbar-light fixed-top">
             <span></span>
-              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button onClick={this.toggleNav} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
